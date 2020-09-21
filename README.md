@@ -62,3 +62,6 @@ en windows:
     
 > TODO el codigo PHP debe estar dentro de los delimitadores
 
+## TAREA:
+
+    leer formularios en HTML (solamente el html)
