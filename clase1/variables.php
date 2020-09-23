@@ -24,6 +24,6 @@
 ?>
 <hr>
 <?php
-    echo 'El número es: ', $numero;
+    echo "El número es: ", $numero;
 ?>
 
