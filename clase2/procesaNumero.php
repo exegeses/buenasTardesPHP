@@ -21,7 +21,9 @@
 ?>        
 
     </div>
-    <a href="enviaNumero.html">volver</a>
+
+
+    <a href="enviaNumero.html" class="boton">volver</a>
 
 </body>
 </html>
