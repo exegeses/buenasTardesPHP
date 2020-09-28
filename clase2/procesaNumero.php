@@ -18,10 +18,33 @@
     else{
         echo '<img src="imagenes/error.png">';
     }
-?>        
-
+?>
     </div>
 
+    <div class="objeto">
+<?php
+    $numero = $_POST['numero'];
+    if( $numero < 100 ){
+        $img = 'ok.png';
+    }
+    else{
+        $img = 'error.png';
+    }
+?>
+        <img src="imagenes/<?php echo $img; ?>">
+    </div>
+
+    <div class="objeto">
+<?php
+        $numero = $_POST['numero'];
+        //valor predeterminado
+        $img = 'error';
+        if( $numero < 100 ){
+            $img = 'ok';
+        }
+?>
+        <img src="imagenes/<?php echo $img; ?>.png">
+    </div>
 
     <a href="enviaNumero.html" class="boton">volver</a>
 
