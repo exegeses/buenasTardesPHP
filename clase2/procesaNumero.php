@@ -13,10 +13,10 @@
     $numero = $_POST['numero'];
     //echo $numero;
     if( $numero < 100 ){
-        echo 'el número es menor';
+        echo '<img src="imagenes/ok.png">';
     }
     else{
-        echo 'el número NO es menor';
+        echo '<img src="imagenes/error.png">';
     }
 ?>        
 
