@@ -2,6 +2,7 @@
     $marca[] = 'Nike';
     $marca[] = 'Sony';
     $marca[] = 'Puma';
+    $paises = ['Argentina', 'Brasil', 'Peru'];
 ?>
 <!doctype html>
 <html lang="en">
@@ -14,6 +15,9 @@
     <h1>Arrays en PHP</h1>
     <div class="objeto">
         <?php echo $marca[2] ?>
+    </div>
+    <div class="objeto">
+        <?php echo $paises[1] ?>
     </div>
 
 </body>
