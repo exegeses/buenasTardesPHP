@@ -38,16 +38,20 @@ form{
 	padding: 25px;
 	border-radius: 5px;
 }
-input{
+input, textarea{
 	border: 1px solid #ccc;
 	padding: 10px;
 	border-radius: 5px;
 	width: 97%;
 	margin-bottom: 10px;
 }
-input:hover, input:focus{
+input:hover, input:focus, textarea:hover, textarea:focus{
 	box-shadow: 0px 0px 3px #5da2a7;
 	border: 1px solid #ccc;
+}
+textarea{
+	height: 180px;
+	resize: none;
 }
 
 button, .boton{

@@ -21,9 +21,32 @@
         $n++;
     }
 ?>
+
+
     <div class="objeto">
         <ul>
-            <li>Marca</li>
+<?php
+    $n = 0; 
+    while( $n < $cantidad ){
+?>
+            <li><?php echo $italianos[$n]; ?></li>
+<?php
+        $n++;
+    }
+?>            
+        </ul>
+    </div>
+
+
+    <div class="objeto">
+        <ul>
+<?php
+    $n = 0;
+    while( $n < $cantidad ){
+        echo '<li>', $italianos[$n], '</li>';
+        $n++;
+    }
+?>
         </ul>
     </div>
 
