@@ -2,7 +2,8 @@
     $descripciones = ["Malla Apple Watch","Tour en bote", "Cedric, stand up show", "paseo en kayak", "cambio de aceite Midas", "Parking en el aeropuerto", "Spa con pileta", "Tobogan acuático"];
     $precios = [9.99, 30, 29.75, 79, 22, 10.50, 21, 29.99];
     $imagenes = ["apple-Watch", "bote", "cedric", "kayaks", "midas", "parking", "pileta", "tobogan"];
-
+    $n = 0;
+    $cantidad = sizeof($precios);
 ?>
 <!doctype html>
 <html lang="en">
@@ -41,13 +42,18 @@
 
         <section id="container">
             <h1>Ofertas</h1>
-
+<?php
+        while ( $n < $cantidad ){
+?>
             <article class="oferta">
-                <img src="imagenesGroupon/muestra.png">
-                <h2>Descripcion</h2>
-                <span class="precio">$15</span>
+                <img src="imagenesGroupon/<?= $imagenes[$n] ?>.jpg">
+                <h2><?= $descripciones[$n] ?></h2>
+                <span class="precio">$<?= $precios[$n] ?></span>
             </article>
-
+<?php
+            $n++;
+        }
+?>
 
             <hr class="clear">
         </section>
