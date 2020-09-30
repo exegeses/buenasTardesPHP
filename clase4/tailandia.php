@@ -41,11 +41,20 @@
 
 	<h1>Tailandia</h1>
 
+<?php
+    $n = 0;
+    $cantidad = count($locacion);
+    while( $n < $cantidad ){
+?>
 	<article class="contenedor">
-        <img src="tailandia/muestra.png">
+        <img src="tailandia/<?= $locacion[$n] ?>.jpg">
 		<br>
-		<h2>Locación</h2>
+		<h2><?= $locacion[$n] ?></h2>
 	</article>
+<?php
+        $n++;
+    }
+?>
 
 </body>
 </html>
