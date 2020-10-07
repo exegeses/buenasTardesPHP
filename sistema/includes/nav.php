@@ -26,5 +26,6 @@
         <button class="btn btn-dark">
             <a href="formLogin.php"><i class="fas fa-sign-in-alt mr-2"></i> Ingresar</a>
         </button>
+
     </div>
 </nav>
