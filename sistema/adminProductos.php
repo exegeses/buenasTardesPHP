@@ -40,7 +40,7 @@
                 <td><?= $producto['mkNombre'] ?></td>
                 <td><?= $producto['catNombre'] ?></td>
                 <td><?= $producto['prdPresentacion'] ?></td>
-                <td><?= $producto['prdImagen'] ?></td>
+                <td><img src="productos/<?= $producto['prdImagen'] ?>" class="img-thumbnail"></td>
                 <td>
                     <a href="" class="btn btn-outline-secondary">
                         Modificar
