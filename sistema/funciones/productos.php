@@ -13,6 +13,7 @@
                     FROM productos p 
                     INNER JOIN marcas m ON p.idMarca = m.idMarca 
                     INNER JOIN categorias c ON p.idCategoria = c.idCategoria";
-        $resultado = mysqli_query( $link, $sql );
+        $resultado = mysqli_query( $link, $sql )
+                        or die( mysqli_error($link) );
         return $resultado;
     }
