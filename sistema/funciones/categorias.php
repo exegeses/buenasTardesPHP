@@ -12,10 +12,21 @@
         return $resultado;
     }
 
+    function agregarCategoria(){
+        $catNombre = $_POST['catNombre'];
+        $link = conectar();
+        $sql = "INSERT INTO categorias
+                        ( catNombre )
+                    VALUE 
+                        ( '".$catNombre."' )";
+        $resultado = mysqli_query( $link, $sql );
+        return $resultado;
+    }
+
     /*
-     * listarMarcas()
-     * verMarcaPorID()
-     * agregarMarca()
-     * modificarMarca()
-     * eliminarMarca()
+     * listarCategorias()
+     * verCategoriaPorID()
+     * agregarCategoria()
+     * modificarCategoria()
+     * eliminarCategoria()
      * */
