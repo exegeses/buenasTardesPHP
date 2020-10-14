@@ -12,7 +12,7 @@
 
         <a href="admin.php" class="btn btn-outline-secondary m-3">Volver a principal</a>
 
-        <table class="table table-bordered table-striped table-hover">
+        <table class="table table-bordered table-striped table-hover col-9 mx-auto">
             <thead class="thead-dark">
                 <tr>
                     <th>id</th>
