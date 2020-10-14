@@ -7,7 +7,7 @@
     <main class="container">
         <h1>Alta de una nueva categoría</h1>
 
-        <div class="alert bg-light p-4 col-6 mx-auto border ">
+        <div class="alert bg-light p-4 col-6 mx-auto border shadow-sm">
 
             <form action="agregarCategoria.php" method="post">
                 <div class="form-group">
