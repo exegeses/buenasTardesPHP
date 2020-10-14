@@ -25,7 +25,7 @@
                 <input type="password" name="usuPass"
                        class="form-control" required>
                 <br>
-                <button class="btn btn-dark mr-3 px-4">Agregar</button>
+                <button class="btn btn-dark mr-3 px-4">Agregar usuario</button>
                 <a href="adminUsuarios.php" class="btn btn-outline-secondary">
                     Volver a panel
                 </a>
