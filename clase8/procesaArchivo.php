@@ -17,4 +17,14 @@
     echo '</pre>';
 
     ################################
+    ################################
+    ### mover archivo a directorio ./productos
 
+    $tmp = $_FILES['prdImagen']['tmp_name'];
+    $path = 'productos/';
+        //nombre original
+        $destino = $path.$_FILES['prdImagen']['name'];
+        //renombrar time().extension
+        //$destino = time().'.'.pathinfo( $_FILES['prdImagen']['name'], PATHINFO_EXTENSION);
+
+    move_uploaded_file($tmp, $destino);
