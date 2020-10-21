@@ -25,6 +25,36 @@
         return $resultado;
     }
 
+    /**
+     * Obtenemos datos de una marca por su ID
+     * @return string[] $marca
+     */
+    function verMarcaPorID()
+    {
+        $idMarca = $_GET['idMarca'];
+        $link = conectar();
+        $sql = "SELECT idMarca, mkNombre
+                    FROM marcas
+                    WHERE idMarca = ".$idMarca;
+        $resultado = mysqli_query( $link, $sql )
+                                or die( mysqli_error($link) );
+        $marca = mysqli_fetch_assoc($resultado);
+        return $marca;
+    }
+
+    function modificarMarca()
+    {
+        $idMarca = $_POST['idMarca'];
+        $mkNombre = $_POST['mkNombre'];
+        $link = conectar();
+        $sql = "UPDATE  marcas
+                    SET  mkNombre = '".$mkNombre."'
+                    WHERE idMarca = ".$idMarca;
+        $resultado = mysqli_query( $link, $sql )
+                            or die( mysqli_error($link) );
+        return $resultado;
+    }
+
     /*
      * listarMarcas()
      * verMarcaPorID()
