@@ -25,6 +25,6 @@
         //nombre original
         $destino = $path.$_FILES['prdImagen']['name'];
         //renombrar time().extension
-        //$destino = time().'.'.pathinfo( $_FILES['prdImagen']['name'], PATHINFO_EXTENSION);
+        //$destino = $path.time().'.'.pathinfo( $_FILES['prdImagen']['name'], PATHINFO_EXTENSION);
 
     move_uploaded_file($tmp, $destino);
