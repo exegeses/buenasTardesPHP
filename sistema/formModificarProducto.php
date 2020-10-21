@@ -56,7 +56,7 @@
 <?php
                 while( $categoria = mysqli_fetch_assoc( $categorias ) ){
 ?>                          
-                        <option <?= ( $producto['idCategoria']==$categoria['idCategoria'] ) ? 'selected': '';  ?> value="<?= $categoria['idCategoria'] ?>"><?= $categoria['catNombre'] ?></option>
+                        <option <?= ( $producto['idCategoria']==$categoria['idCategoria'] ) ? 'selected':'';  ?> value="<?= $categoria['idCategoria'] ?>"><?= $categoria['catNombre'] ?></option>
 <?php
                 }
 ?>                    
