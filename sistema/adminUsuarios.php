@@ -36,7 +36,7 @@
                     <td><?= $usuario['usuApellido']; ?></td>
                     <td><?= $usuario['usuEmail']; ?></td>
                     <td>
-                        <a href="" class="btn btn-outline-secondary">
+                        <a href="formModificarUsuario.php?idUsuario=<?= $usuario['idUsuario']; ?>" class="btn btn-outline-secondary">
                             Modificar
                         </a>
                     </td>
