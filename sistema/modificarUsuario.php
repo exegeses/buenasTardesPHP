@@ -15,7 +15,7 @@
         $mensaje = 'No se pudo modificar el usuario.';
         if( $resultado ){
             $clase = 'success';
-            $mensaje = 'Usuairo modificado corectamente.';
+            $mensaje = 'Usuario modificado correctamente.';
 ?>
             <div class="alert alert-<?= $clase; ?> p-3">
                 <?= $mensaje; ?>
