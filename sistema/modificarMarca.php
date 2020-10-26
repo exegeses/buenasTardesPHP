@@ -15,7 +15,7 @@
         $mensaje = 'No se pudo modificar la marca.';
         if( $resultado ){
             $clase = 'success';
-            $mensaje = 'Marca modificada corectamente.';
+            $mensaje = 'Marca modificada correctamente.';
 ?>
             <div class="alert alert-<?= $clase; ?> p-3">
                 <?= $mensaje; ?>
