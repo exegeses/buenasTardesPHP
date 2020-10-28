@@ -39,7 +39,7 @@
 
         <script>
             Swal.fire({
-                title: 'Arvertencia',
+                title: 'Advertencia',
                 text: "Esta acción no se puede deshacer.",
                 type: 'error',
                 showCancelButton: true,
