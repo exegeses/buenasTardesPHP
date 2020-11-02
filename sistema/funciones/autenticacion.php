@@ -20,6 +20,9 @@
         else{
             ### AUTENTICACION
             $_SESSION['login'] = 1;
+            $usuario = mysqli_fetch_assoc($resultado);
+            $_SESSION['usuNombre'] = $usuario['usuNombre'];
+            $_SESSION['usuApellido'] = $usuario['usuApellido'];
             //redirección a admin
             header('location: admin.php');
         }
@@ -27,7 +30,9 @@
     }
     function logout()
     {
-
+        //session_unset();
+        session_destroy();
+        header('refresh:3;url=index.php');
     }
 
     /**
