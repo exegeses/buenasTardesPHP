@@ -19,7 +19,7 @@
         }
         else{
             ### AUTENTICACION
-
+            $_SESSION['login'] = 1;
             //redirección a admin
             header('location: admin.php');
         }
@@ -30,6 +30,9 @@
 
     }
 
+    /**
+    * Función para chequear token de sesión
+     */
     function autenticar()
     {
 
