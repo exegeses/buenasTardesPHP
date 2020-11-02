@@ -23,11 +23,16 @@
         </div>
 <?php
           if( isset( $_GET['error'] ) ){
+              if ($_GET['error'] == 1) {
+                  $msj = 'Nombre de usuario y/o clave incorrecto';
+              } else if  ($_GET['error'] == 2) {
+                  $msj = 'Debe loguearse para ingresar';
+              }
 ?>
               <script>
                   Swal.fire(
                       'Advertencia',
-                      'Nombre de usuario y/o clave incorrectos',
+                      '<?= $msj; ?>',
                       'error'
                   )
               </script>
