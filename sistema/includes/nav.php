@@ -9,6 +9,7 @@
         <a class="py-2" href="adminCategorias.php">Categorías</a>
         <a class="py-2" href="adminProductos.php">Productos</a>
         <a class="py-2" href="adminUsuarios.php">Usuarios</a>
+        <a class="py-2" href="formContacto.php">Contacto</a>
 
 <!-- si está loggueadp -->
 <?php
